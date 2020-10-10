@@ -1,0 +1,22 @@
+@media only screen and (max-width: 1200px) {
+    .ctr {
+      flex-wrap: wrap;
+    }
+  }
+
+  @media only screen and (max-width: 900px) {
+    .box-left {
+        flex-wrap: wrap;
+    }
+    .card-holder {
+        flex-wrap: wrap;
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .item-card {
+        margin: 20px 0px;
+    }
+  }
+  

@@ -1,0 +1,146 @@
+.rowInduk {
+  display: flex;
+  flex-direction: row;
+}
+.colatas {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  height: 95vh;
+
+}
+.colbawah {
+  padding: 0px;
+  margin: 0px;
+  height: 95vh;
+}
+.rowi1 {
+  height: 30vh;
+  width: 50%;
+  margin: 10px 10px;
+  text-align: left;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  align-self: flex-start;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: #0077d9;
+}
+.rowi2 {
+  height: 30vh;
+  width: 50%;
+  margin: 10px 10px;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: flex-end;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: #0077d9;
+  flex-direction: column;
+}
+.rowi3 {
+  height: 30vh;
+  width: 50%;
+  margin: 10px 10px;
+  text-align: left;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  align-self: flex-start;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: #0077d9;
+}
+.btn-btm {
+  width: 200px;
+  padding: 10px 0px;
+  border-radius: 20px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  outline: none;
+  color: #0077d9;
+  background-color: #fafdff;
+  align-self: center;
+  margin-top: 20px;
+  font-size: 20px;
+}
+.btn-btm:hover {
+  color: #0077d9;
+  background-color: #fafdff;
+}
+
+.content-text {
+  font-size: 16px;
+  font-weight: 400;
+  padding: 15px;
+  text-align: left;
+  letter-spacing: 2px;
+  color: #fafdff;
+  font-family: "Rubik", sans-serif;
+  background-color: "gray";
+}
+
+
+@media only screen and (max-width: 1000px) {
+  .rowInduk {
+    flex-direction: column;
+  }
+  .rowi1 {
+    min-width: 50%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+
+  }
+  .rowi2 {
+    min-width: 50%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+  }
+  .rowi3 {
+    min-width: 50%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+
+  }
+  .colatas {
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .rowi1 {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+
+  }
+  .rowi2 {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+  }
+  .rowi3 {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+
+  }
+}

@@ -1,0 +1,98 @@
+.boss {
+  display: flex;
+  flex-direction: row;
+}
+.box-left {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.box-right {
+  width: 100%;
+  height: auto;
+  background-color: #0077d9;
+  display: flex;
+  justify-content: center;
+}
+.icon-holder {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: center;
+}
+.btn-btm {
+  width: 200px;
+  padding: 10px 0px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  color: #0077d9;
+  background-color: #fafdff;
+  align-self: center;
+  margin-top: 20px;
+  font-size: 20px;
+}
+.form-holder {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.text-touch {
+  font-size: 24px;
+  font-family: "Karla", sans-serif;
+  font-weight: 400;
+  padding: 15px;
+  text-align: center;
+  color: #0077d9;
+  letter-spacing: 2px;
+}
+
+.text-label {
+  font-size: 24px;
+  font-family: "Karla", sans-serif;
+  font-weight: 400;
+  padding: 15px;
+  text-align: center;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  display: flex;
+  color: #fafdff;
+  font-family: "Rubik", sans-serif;
+}
+.text-emailUser {
+  font-size: 20px;
+  font-family: "Karla", sans-serif;
+  color: #0077d9;
+  text-decoration: underline;
+}
+.text-commentUser {
+  font-size: 20px;
+  margin-top: 10px;
+  color: #0077d9;
+  text-decoration: none;
+}
+.comment-section {
+  height: auto;
+  width: 100%;
+  background-color: #fafdff;
+}
+.card-comment {
+  width: 100%;
+  margin: 10px 10px;
+  height: auto;
+  border: 2px solid #0077d9;
+  background-color: #f3f3f3;
+  display: flex;
+  flex-direction: row;
+}
+
+@media only screen and (max-width: 700px) {
+   .boss {
+     flex-direction: column;
+   }
+  }
+  
