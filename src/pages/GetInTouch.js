@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from "react";
-import styled from "styled-components";
 import { useSelector, useDispatch } from "react-redux";
 import { getAllComments, addComments } from "../redux/actions/index";
 import { Container, Row, Col, Button, Form } from "react-bootstrap";
-import {useHistory} from 'react-router-dom';
 import Loader from 'react-loader-spinner'
 import "./GetInTouch.css";
 
@@ -12,7 +10,6 @@ const GetInTouch = () => {
   const comments = useSelector((state) => state.comments.slice(0, 7));
 
   const dispatch = useDispatch();
-  const history = useHistory()
   console.log(comments);
   const [form, setForm] = useState({
     email: "",
@@ -120,6 +117,7 @@ const GetInTouch = () => {
                   <img
                     src={item.avatar}
                     style={{ width: "100px", height: "100px" }}
+                    alt="img4"
                   />
                   <Col>
                     <p className="text-emailUser">{item.email}</p>

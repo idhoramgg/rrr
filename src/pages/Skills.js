@@ -146,15 +146,15 @@ export default function Skills() {
                 <TypoGraphyH4>My Portofolio using MERN Stack</TypoGraphyH4>
       <Carousel>
                 <div>
-                    <img src={imageAdmin} />
+                    <img src={imageAdmin} alt="img1" />
                     <p className="legend">admin.mgfriends.com</p>
                 </div>
                 <div>
-                    <img src={imageCukurin} />
+                    <img src={imageCukurin} alt="img2" />
                     <p className="legend">cukurin.netlify.com</p>
                 </div>
                 <div>
-                    <img src={imageMG} />
+                    <img src={imageMG} alt="img3" />
                     <p className="legend">mgfriends.com</p>
                 </div>
             </Carousel>
