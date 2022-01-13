@@ -15,6 +15,10 @@ import imageMysql from "../assets/images/mysql.png";
 import imageCukurin from '../assets/images/ckri.png';
 import imageMG from '../assets/images/mgf.png';
 import imageAdmin from '../assets/images/admin.png';
+import imageMini from '../assets/images/mini_menagerie.JPG';
+import imageQasirSignIn from '../assets/images/qasir_sign_in.JPG';
+import imageQasirDashboard from '../assets/images/qasir_user_dashboard.JPG';
+import imageStoryBook from '../assets/images/storybook_qasir_ui.JPG';
 
 import './Skills.css'
 const Container = styled.div`
@@ -38,14 +42,18 @@ const CardHolder = styled.div`
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
+
 `;
 
 const Card = styled.div`
-  width: 300px;
-  height: 30vh;
+  width: 200px;
+  height: 150px;
+  border: 1px solid black;
+  margin: 8px;
   background: url(${imageHTML});
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
   &:hover {
     opacity: 0.5;
   }
@@ -54,41 +62,56 @@ const Card1 = styled(Card)`
   background: url(${imageCSS});
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
+
 `;
 const Card2 = styled(Card)`
   background: url(${imageJS});
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
 `;
 const Card3 = styled(Card)`
   background: url(${imageReact});
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
+
 `;
 const Card4 = styled(Card)`
   background: url(${imageRedux});
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
+
 `;
 const Card5 = styled(Card)`
   background: url(${imageNode});
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
+
 `;
 const Card6 = styled(Card)`
   background: url(${imageExpress});
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
+
 `;
 const Card7 = styled(Card)`
   background: url(${imageMongo});
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
+
 `;
 const Card8 = styled(Card)`
   background: url(${imageMysql});
   background-position: center;
-  background-size: cover;
+  background-ize: cover;
+  background-repeat: no-repeat;
+
 `;
 
 const BoxRight = styled.div`
@@ -96,6 +119,7 @@ const BoxRight = styled.div`
   display: flex;
   justify-content: center;
   flex-direction: column;
+  
 `;
 const TypoGraphyH4 = styled.p`
   font-size: 24px;
@@ -156,6 +180,22 @@ export default function Skills() {
                 <div>
                     <img src={imageMG} alt="img3" />
                     <p className="legend">mgfriends.com</p>
+                </div>
+                <div>
+                    <img src={imageMini} alt="img4" />
+                    <p className="legend">mini-m.netlify.app</p>
+                </div>
+                <div>
+                    <img src={imageQasirSignIn} alt="img4" />
+                    <p className="legend">qasir.id</p>
+                </div>
+                <div>
+                    <img src={imageQasirDashboard} alt="img4" />
+                    <p className="legend">qasir.id</p>
+                </div>
+                <div>
+                    <img src={imageStoryBook} alt="img4" />
+                    <p className="legend">qasir-ui.qasir.xyz</p>
                 </div>
             </Carousel>
             <Btn><Link to="/contact" style={{textDecoration: 'none', color: '#fafdff', fontFamily: "'Karla', sans-serif"}}> Get In Touch </Link> </Btn>

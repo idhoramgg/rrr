@@ -33,7 +33,7 @@ export default function Navbar() {
          <Link style={styles.link} to="/about">About</Link>
       </li>
       <li style={styles.list}> 
-         <Link style={styles.link} to="/skills">Skills</Link>
+         <Link style={styles.link} to="/portofolio">Portofolio</Link>
       </li>
       <li style={styles.list}> 
          <Link style={styles.link} to="/contact">Contact</Link>

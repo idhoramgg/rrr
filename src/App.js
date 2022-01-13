@@ -24,7 +24,7 @@ const App = () => {
         <Route exact path="/about">
           <About/>
         </Route>
-        <Route exact path="/skills">
+        <Route exact path="/portofolio">
           <Skills/>
         </Route>
         <Route exact path="/contact">

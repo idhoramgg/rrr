@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
-import { Container, Row, Col, Button } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 
 import topImage from "../assets/images/robot.jpeg";
 
@@ -38,19 +37,7 @@ export default function About() {
                   I got my first job as Full Stack Developer at November 2019, I
                   Enjoy my time learning something new in order to upgrade my
                   programming skills.
-                  <Button className="btn-btm">
-                    <Link
-                      to="/skills"
-                      style={{
-                        textDecoration: "none",
-                        color: "#0077d9",
-                        fontFamily: "'Karla', sans-serif",
-                      }}
-                    >
-                      {" "}
-                      Read More{" "}
-                    </Link>{" "}
-                  </Button>
+                
                 </p>
               </Row>
         </Col>
