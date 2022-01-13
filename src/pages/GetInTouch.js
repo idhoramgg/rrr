@@ -56,21 +56,21 @@ const GetInTouch = () => {
               target="blank"
               href="https://www.github.com/idhoramgg"
             >
-              <i class="fab fa-github fa-9x"></i>
+              <i className="fab fa-github fa-9x"></i>
             </a>
             <a
               style={{ color: "#0077d9", margin: "0px 10px" }}
               target="blank"
               href="https://www.instagram.com/idhoramgg"
             >
-              <i class="fab fa-instagram fa-9x"></i>
+              <i className="fab fa-instagram fa-9x"></i>
             </a>
             <a
               style={{ color: "#0077d9", margin: "0px 10px" }}
               target="blank"
               href="https://www.facebook.com/idhoram"
             >
-              <i class="fab fa-facebook fa-9x"></i>
+              <i className="fab fa-facebook fa-9x"></i>
             </a>
           </Row>
           <Row className="form-holder">
@@ -112,15 +112,15 @@ const GetInTouch = () => {
           <Row className="comment-section">
             {comments.length === 0 ? <Loading /> : comments.map((item) => {
               return (
-                <Row className="card-comment">
+                <Row className="card-comment" key={item._id}>
                   <img
                     src={'https://media.istockphoto.com/vectors/user-icon-flat-isolated-on-white-background-user-symbol-vector-vector-id1300845620?b=1&k=20&m=1300845620&s=170667a&w=0&h=JbOeyFgAc6-3jmptv6mzXpGcAd_8xqkQa_oUK2viFr8='}
                     style={{ width: "100px", height: "80px" }}
                     alt="img4"
                   />
                   <Col>
-                    <p className="text-emailUser">{item.email}</p>
-                    <p className="text-commentUser">{item.comment}</p>
+                    <p className="text-emailUser p">{item.email}</p>
+                    <p className="text-commentUser p">{item.comment}</p>
                   </Col>
                 </Row>
               );
