@@ -26,7 +26,7 @@ const GetInTouch = () => {
     dispatch(addComments(form));
     setForm({
       email: "",
-      comments: ""
+      comment: ""
     })
   };
 
@@ -45,7 +45,6 @@ const GetInTouch = () => {
   useEffect(() => {
     dispatch(getAllComments());
   }, [dispatch]);
-  console.log(comments.length);
   return (
     <Container fluid>
       <Row className="boss">
@@ -96,8 +95,8 @@ const GetInTouch = () => {
                 <Form.Control
                   as="textarea"
                   rows="3"
-                  name="comments"
-                  value={form.comments}
+                  name="comment"
+                  value={form.comment}
                   onChange={handleChange}
                 />
               </Form.Group>
@@ -111,17 +110,17 @@ const GetInTouch = () => {
 
         <Col className="box-right">
           <Row className="comment-section">
-            {comments.length === 0 ? <Loading/> : comments.map((item) => {
+            {comments.length === 0 ? <Loading /> : comments.map((item) => {
               return (
                 <Row className="card-comment">
                   <img
-                    src={item.avatar}
-                    style={{ width: "100px", height: "100px" }}
+                    src={'https://media.istockphoto.com/vectors/user-icon-flat-isolated-on-white-background-user-symbol-vector-vector-id1300845620?b=1&k=20&m=1300845620&s=170667a&w=0&h=JbOeyFgAc6-3jmptv6mzXpGcAd_8xqkQa_oUK2viFr8='}
+                    style={{ width: "100px", height: "80px" }}
                     alt="img4"
                   />
                   <Col>
                     <p className="text-emailUser">{item.email}</p>
-                    <p className="text-commentUser">{item.comments}</p>
+                    <p className="text-commentUser">{item.comment}</p>
                   </Col>
                 </Row>
               );

@@ -76,14 +76,15 @@
   text-decoration: none;
 }
 .comment-section {
-  height: auto;
+  height: 100vh;
   width: 100%;
   background-color: #fafdff;
+  display:flex;
+  flex-direction: column;
 }
 .card-comment {
-  width: 100%;
   margin: 10px 10px;
-  height: auto;
+  height: 100px;
   border: 2px solid #0077d9;
   background-color: #f3f3f3;
   display: flex;
